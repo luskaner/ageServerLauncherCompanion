@@ -15,7 +15,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Age3FakeOnline", "age3\Fake
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AgeFakeHostsCerts", "age\FakeHostsCerts\AgeFakeHostsCerts.vcxproj", "{06363F74-DB00-48F2-8DD7-B70C9E67BA66}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FakeSignKey", "age\FakeSignKey\FakeSignKey\FakeSignKey.vcxproj", "{A1B2C3D4-E5F6-7890-ABCD-1234567890AB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FakeSignKey", "age\FakeSignKey\FakeSignKey.vcxproj", "{A1B2C3D4-E5F6-7890-ABCD-1234567890AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
