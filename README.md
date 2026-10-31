@@ -1,6 +1,6 @@
 # Age LAN Server - Launcher Companion
 
-Age LAN Server - Launcher Companion aims to provide DLL files to enhance or fix certain behaviours of the game to better be used with [Age LAN Server](https://github.com/luskaner/ageLANServer) launcher when using a custom game launcher.
+Age LAN Server - Launcher Companion (formerly *AoE 2 DE LAN Server - Launcher Companion*) aims to provide DLL files to enhance or fix certain behaviours of the game to better be used with [Age LAN Server](https://github.com/luskaner/ageLANServer) launcher when using a custom game launcher.
 
 ## Libraries
 
