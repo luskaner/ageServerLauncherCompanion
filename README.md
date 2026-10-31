@@ -94,7 +94,7 @@ spanish
 [user::general]
 # Fill your account name as you would normally see.
 account_name=
-# Fill with your real steamid or leave empty for it to be auto-generated.
+# Fill with your real steamid or leave empty for it to be auto-generated. Depending on the emu version can be 32 or 64 bits.
 account_steamid=
 # Choose one from steam_settings\supported_languages.txt (described in https://partner.steamgames.com/doc/store/localization/languages) or leave empty to be set as 'english'
 language=
@@ -174,7 +174,7 @@ unlock_all=0
 [user::general]
 # Fill your account name as you would normally see.
 account_name=
-# Fill with your real steamid or leave empty for it to be auto-generated.
+# Fill with your real steamid or leave empty for it to be auto-generated. Depending on the emu version can be 32 or 64 bits.
 account_steamid=
 # Choose one from steam_settings\supported_languages.txt (described in https://partner.steamgames.com/doc/store/localization/languages) or leave empty to be set as 'english'
 language=
@@ -251,7 +251,7 @@ unlock_all=0
 [user::general]
 # Fill your account name as you would normally see.
 account_name=
-# Fill with your real steamid or leave empty for it to be auto-generated.
+# Fill with your real steamid or leave empty for it to be auto-generated. Depending on the emu version can be 32 or 64 bits.
 account_steamid=
 # Choose one from steam_settings\supported_languages.txt (described in https://partner.steamgames.com/doc/store/localization/languages) or leave empty to be set as 'english'
 language=
@@ -338,7 +338,7 @@ unlock_all=0
 [user::general]
 # Fill your account name as you would normally see.
 account_name=
-# Fill with your real steamid or leave empty for it to be auto-generated.
+# Fill with your real steamid or leave empty for it to be auto-generated. Depending on the emu version can be 32 or 64 bits.
 account_steamid=
 # Choose one from steam_settings\supported_languages.txt (described in https://partner.steamgames.com/doc/store/localization/languages) or leave empty to be set as 'english'
 language=
@@ -430,7 +430,7 @@ unlock_all=0
 [user::general]
 # Fill your account name as you would normally see.
 account_name=
-# Fill with your real steamid or leave empty for it to be auto-generated.
+# Fill with your real steamid or leave empty for it to be auto-generated. Depending on the emu version can be 32 or 64 bits.
 account_steamid=
 # Choose one from steam_settings\supported_languages.txt (described in https://partner.steamgames.com/doc/store/localization/languages) or leave empty to be set as 'english'
 language=
