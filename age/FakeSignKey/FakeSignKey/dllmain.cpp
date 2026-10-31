@@ -1,4 +1,4 @@
-// AoEIntegrityBypass — Sustitución flexible y exacta de la clave pública (multi-age)
+// FakeSignKey — Sustitución flexible y exacta de la clave pública (multi-age)
 //
 // Busca AUTOMÁTICAMENTE en memoria la clave RSA-2048 embebida (SPKI PKCS#1,
 // 294 bytes) por su patrón DER y la identifica de forma EXACTA comparando su
@@ -15,7 +15,7 @@
 // de comandos del proceso (--sigkey-der <ruta> o /sigkey-der:<ruta>). No hay
 // valor por defecto (ni junto al DLL, ni por variable de entorno).
 //
-// Compilar con: cl.exe /nologo /LD /O2 /DWIN32 /D_WINDOWS /W3 /D_CRT_SECURE_NO_WARNINGS dllmain.cpp /link /OUT:AoEIntegrityBypass.dll
+// Compilar con: cl.exe /nologo /LD /O2 /DWIN32 /D_WINDOWS /W3 /D_CRT_SECURE_NO_WARNINGS dllmain.cpp /link /OUT:AgeFakeSignKey.dll
 
 #include "pch.h"
 #include "framework.h"
@@ -354,7 +354,7 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserv
     case DLL_PROCESS_ATTACH: {
         DisableThreadLibraryCalls(hModule);
         DebugLogOpen(hModule);
-        DebugLog("=== AoEIntegrityBypass cargado ===\n");
+        DebugLog("=== FakeSignKey cargado ===\n");
 
         char keyPath[MAX_PATH] = {0};
         if (ParseSigKeyPathFromCommandLine(keyPath, MAX_PATH)) {
@@ -372,7 +372,7 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserv
     }
 
     case DLL_PROCESS_DETACH: {
-        DebugLog("=== AoEIntegrityBypass descargado ===\n");
+        DebugLog("=== FakeSignKey descargado ===\n");
         DebugLogClose();
         break;
     }

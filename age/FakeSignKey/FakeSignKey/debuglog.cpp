@@ -1,4 +1,4 @@
-// AoEIntegrityBypass — Debug logging implementation
+// FakeSignKey — Debug logging implementation
 // Consistente con los otros DLL de ageLANServerLauncherCompanion
 
 #include "pch.h"
@@ -24,7 +24,7 @@ void DebugLogOpen(HMODULE hModule)
 
     SYSTEMTIME st;
     GetLocalTime(&st);
-    fprintf(g_logFile, "\n=== AoEIntegrityBypass %04d-%02d-%02d %02d:%02d:%02d ===\n",
+    fprintf(g_logFile, "\n=== FakeSignKey %04d-%02d-%02d %02d:%02d:%02d ===\n",
             st.wYear, st.wMonth, st.wDay, st.wHour, st.wMinute, st.wSecond);
     fflush(g_logFile);
 }
@@ -49,7 +49,7 @@ void __cdecl DebugLog(const char* fmt, ...)
 void DebugLogClose(void)
 {
     if (g_logFile) {
-        fprintf(g_logFile, "=== AoEIntegrityBypass descargado ===\n");
+        fprintf(g_logFile, "=== FakeSignKey descargado ===\n");
         fclose(g_logFile);
         g_logFile = nullptr;
     }
