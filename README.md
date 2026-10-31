@@ -6,6 +6,7 @@ Age LAN Server - Launcher Companion aims to provide DLL files to enhance or fix 
 
 * `Age2FakeOnline.dll` and `Age3FakeOnline.dll`: Fakes an internet always online behaviour. It is essential so that [Age Lan Server](https://github.com/luskaner/ageLANServer) can be used without connected to the internet, but still connected to LAN. **AoE I and AoM: RT do not need it**.
 * `AgeFakeHostsCerts.dll`: Fakes the resolving of hosts and handles certificate trust. It avoids the need for the launcher to modify the system-wide hosts (which requires admin permissions, affects all apps and so the changes need to be reverted). **Can be used for all games**.
+* `AgeFakeSignKey.dll`: Replaces the embedded RSA-2048 public key in Age game clients (AoE2DE, AoE3DE, AoMRT, AoE4) with the community server's public key (`sigkey.der`), without disabling signature verification. Pass the key path via `--sigkey-der <path>` on the game command line.
 
 *Note: It is [suspected](https://github.com/luskaner/ageLANServerLauncherCompanion/issues/9) `Age3FakeOnline.dll` is not actually needed*.
 
