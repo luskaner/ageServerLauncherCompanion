@@ -1,14 +1,14 @@
 # Age Server - Launcher Companion
 
-Age Server - Launcher Companion (formerly *Age LAN Server - Launcher Companion*) aims to provide DLL files to enhance or fix certain behaviours of the game to better be used with [Age LAN Server](https://github.com/luskaner/ageLANServer) launcher when using a custom game launcher.
+Age Server - Launcher Companion (formerly *Age Server - Launcher Companion*) aims to provide DLL files to enhance or fix certain behaviours of the game to better be used with [Age Server](https://github.com/luskaner/ageServer) launcher when using a custom game launcher.
 
 ## Libraries
 
-* `Age2FakeOnline.dll` and `Age3FakeOnline.dll`: Fakes an internet always online behaviour. It is essential so that [Age Lan Server](https://github.com/luskaner/ageLANServer) can be used without connected to the internet, but still connected to LAN. **AoE I and AoM: RT do not need it**.
+* `Age2FakeOnline.dll` and `Age3FakeOnline.dll`: Fakes an internet always online behaviour. It is essential so that [Age Server](https://github.com/luskaner/ageServer) can be used without connected to the internet, but still connected to LAN. **AoE I and AoM: RT do not need it**.
 * `AgeFakeHostsCerts.dll`: Fakes the resolving of hosts and handles certificate trust. It avoids the need for the launcher to modify the system-wide hosts (which requires admin permissions, affects all apps and so the changes need to be reverted). **Can be used for all games**.
 * `AgeFakeSignKey.dll`: Replaces the embedded RSA-2048 public key in Age game clients (AoE2DE, AoE3DE, AoMRT, AoE4) with the community server's public key (`sigkey.der`), without disabling signature verification. **Can be used for all games**.
 
-*Note: It is [suspected](https://github.com/luskaner/ageLANServerLauncherCompanion/issues/9) `Age3FakeOnline.dll` is not actually needed*.
+*Note: It is [suspected](https://github.com/luskaner/ageServerLauncherCompanion/issues/9) `Age3FakeOnline.dll` is not actually needed*.
 
 ## Minimum system requirements
 
@@ -18,7 +18,7 @@ Age Server - Launcher Companion (formerly *Age LAN Server - Launcher Companion*)
 
 ## Binaries
 
-See the [releases page](https://github.com/luskaner/ageLANServerLauncherCompanion/releases)
+See the [releases page](https://github.com/luskaner/ageServerLauncherCompanion/releases)
 
 *Note: If you are using Antivirus it may flag one or more binaries as virus, this is a **false positive***.
 
@@ -105,7 +105,7 @@ ip_country=
 local_save_path=saves
 ```
 5. Modify the fields according to the comments.
-6. Edit [Age LAN Server - Launcher](https://github.com/luskaner/ageLANServer/tree/main/launcher) `resources\config.aoe1.toml` and set:
+6. Edit [Age Server - Launcher](https://github.com/luskaner/ageServer/tree/main/launcher) `resources\config.aoe1.toml` and set:
    * `[Client]`:
       * `Executable`:  `Drive:\Path\To\steamclient_loader_x64.exe`.
 
@@ -186,7 +186,7 @@ local_save_path=saves
 ```
 7. Modify the fields according to the comments.
 8. Copy the `Age2...` DLLs you have download from here to `dlls` folder (*uncompressed*).
-9. Edit [Age LAN Server - Launcher](https://github.com/luskaner/ageLANServer/tree/main/launcher) `resources\config.aoe2.toml` and set:
+9. Edit [Age Server - Launcher](https://github.com/luskaner/ageServer/tree/main/launcher) `resources\config.aoe2.toml` and set:
    * `[Client]`:
       * `Executable`:  `Drive:\Path\To\steamclient_loader_x64.exe`.
       * `Path`: `Drive:\Path\To\SteamLibrary\steamapps\common\AoE2DE`
@@ -263,7 +263,7 @@ local_save_path=saves
 ```
 7. Modify the fields according to the comments.
 8. Copy the `Age3...` DLLs you have download from here to `dlls` folder (*uncompressed*). Note that the *FakeOnline* might not actually be necessary.
-9. Edit [Age LAN Server - Launcher](https://github.com/luskaner/ageLANServer/tree/main/launcher) `resources\config.aoe3.toml` and set:
+9. Edit [Age Server - Launcher](https://github.com/luskaner/ageServer/tree/main/launcher) `resources\config.aoe3.toml` and set:
    * `[Client]`:
       * `Executable`:  `Drive:\Path\To\steamclient_loader_x64.exe`.
       * `Path`: `Drive:\Path\To\SteamLibrary\steamapps\common\AoE3DE`
@@ -354,7 +354,7 @@ local_save_path=saves
 [main::connectivity]
 disable_lan_only=1
 ```
-9. Edit [Age LAN Server - Launcher](https://github.com/luskaner/ageLANServer/tree/main/launcher) `resources\config.age4.toml` and set:
+9. Edit [Age Server - Launcher](https://github.com/luskaner/ageServer/tree/main/launcher) `resources\config.age4.toml` and set:
    * `[Client]`:
       * `Executable`:  `Drive:\Path\To\steamclient_loader_x64.exe`.
 10. This game has additional protections and you will need a way to bypass them.
@@ -446,7 +446,7 @@ local_save_path=saves
 [main::connectivity]
 disable_lan_only=1
 ```
-9. Edit [Age LAN Server - Launcher](https://github.com/luskaner/ageLANServer/tree/main/launcher) `resources\config.athens.toml` and set:
+9. Edit [Age Server - Launcher](https://github.com/luskaner/ageServer/tree/main/launcher) `resources\config.athens.toml` and set:
    * `[Client]`:
       * `Executable`:  `Drive:\Path\To\steamclient_loader_x64.exe`.
       * `Path`: `Drive:\Path\To\SteamLibrary\steamapps\common\Age of Mythology Retold`
@@ -482,13 +482,13 @@ Before staring make sure to clone the repo with submodules and install `vcpkg` s
 
 * Release Build: `msbuild /m /p:Configuration=Release`
 * Debug Build:  `msbuild /m /p:Configuration=Debug`
-* Release workflow: See [Github Workflow](https://github.com/luskaner/ageLANServerLauncherCompanion/blob/main/.github/workflows/release.yml)
+* Release workflow: See [Github Workflow](https://github.com/luskaner/ageServerLauncherCompanion/blob/main/.github/workflows/release.yml)
   
 </details>
 
 ## Terms of Use
 
-You may only use the provided binaries if you use it in conjuction with [Age LAN Server](https://github.com/luskaner/ageLANServer) and comply with its [terms](https://github.com/luskaner/ageLANServer?tab=readme-ov-file#additional-terms-of-use-for-the-downloadable-package).
+You may only use the provided binaries if you use it in conjuction with [Age Server](https://github.com/luskaner/ageServer) and comply with its [terms](https://github.com/luskaner/ageServer?tab=readme-ov-file#additional-terms-of-use-for-the-downloadable-package).
 
 Disclaimer: This software is not affiliated with Xbox Game Studios, Microsoft Corporation, Forgotten Empires LLC,
 World's Edge LLC, or any other entity that is involved in the development of Age of Empires 2 Definitive Edition.

@@ -72,7 +72,7 @@ BEGIN
             VALUE "FileDescription", "Fake an always online status"
             VALUE "FileVersion", "1.4.0.0"
             VALUE "InternalName", "Age2FakeOnline.dll"
-            VALUE "LegalCopyright", "Copyright (C) 2025 - https://github.com/luskaner/ageLANServerLauncherCompanion"
+            VALUE "LegalCopyright", "Copyright (C) 2025 - https://github.com/luskaner/ageServerLauncherCompanion"
             VALUE "OriginalFilename", "Age2FakeOnline.dll"
             VALUE "ProductName", "Age2FakeOnline"
             VALUE "ProductVersion", "1.4.0.0"

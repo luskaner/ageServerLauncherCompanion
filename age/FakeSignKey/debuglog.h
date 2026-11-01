@@ -1,5 +1,5 @@
 // AoEIntegrityBypass — Debug logging header
-// Consistente con los otros DLL de ageLANServerLauncherCompanion
+// Consistent with other DLLs
 
 #pragma once
 

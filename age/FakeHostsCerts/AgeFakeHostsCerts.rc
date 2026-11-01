@@ -70,7 +70,7 @@ BEGIN
             VALUE "FileDescription", "Fake host resolution and certificate trust"
             VALUE "FileVersion", "1.4.0.0"
             VALUE "InternalName", "AgeFakeHostsCerts.dll"
-            VALUE "LegalCopyright", "Copyright (C) 2025 - https://github.com/luskaner/ageLANServerLauncherCompanion"
+            VALUE "LegalCopyright", "Copyright (C) 2025 - https://github.com/luskaner/ageServerLauncherCompanion"
             VALUE "OriginalFilename", "AgeFakeHostsCerts.dll"
             VALUE "ProductName", "AgeFakeHostsCerts"
             VALUE "ProductVersion", "1.4.0.0"

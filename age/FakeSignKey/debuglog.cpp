@@ -1,5 +1,5 @@
 // FakeSignKey — Debug logging implementation
-// Consistente con los otros DLL de ageLANServerLauncherCompanion
+// Consitent with the other DLLs
 
 #include "pch.h"
 #include "debuglog.h"
@@ -49,7 +49,7 @@ void __cdecl DebugLog(const char* fmt, ...)
 void DebugLogClose(void)
 {
     if (g_logFile) {
-        fprintf(g_logFile, "=== FakeSignKey descargado ===\n");
+        fprintf(g_logFile, "=== FakeSignKey unloaded ===\n");
         fclose(g_logFile);
         g_logFile = nullptr;
     }
